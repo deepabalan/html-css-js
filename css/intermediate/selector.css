@@ -1,0 +1,11 @@
+
+
+#top {  /* id selector */
+    background-color: #ccc;
+    padding: 20px
+}
+
+.intro {  /* class selector */
+    color: red;
+    font-weight: bold;
+}

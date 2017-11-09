@@ -1,0 +1,15 @@
+
+
+<head>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+$.ajax({
+    url: '/data.json',
+    method: 'GET',
+    success: function (data) {
+        console.log(data);
+    }
+});
+</script>
+</head>

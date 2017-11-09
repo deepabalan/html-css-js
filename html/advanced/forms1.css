@@ -1,0 +1,11 @@
+
+
+input[type=email]:valid { background:
+green }
+input[type=email]:invalid { background:
+red }
+
+input[type=number]:valid { background:
+green }
+input[type=number]:invalid { background:
+red }

@@ -1,0 +1,13 @@
+
+
+p {
+    font-size: 12px;
+}
+p:first-letter {
+    font-size: 24px;
+    float: left;
+    color: green;
+}
+p:first-line {
+    font-weight: bold;
+}

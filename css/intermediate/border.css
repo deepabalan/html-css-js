@@ -1,0 +1,11 @@
+
+/*p {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}*/
+
+p {
+    border: 1px purple solid;
+    font: italic bold 12px/2 courier;
+}
