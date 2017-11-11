@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>*DiveIntoHTML5*</title>
+</head>
+
+<body>
+<canvas id="a" width="500" height="250"></canvas>
+
+<script>
+    function draw_rect() {
+        var canvas_rect = document.getElementById("a");
+        var context = canvas_rect.getContext("2d");
+        context.fillRect(50, 25, 150, 100);
+    }
+    draw_rect();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+
+<canvas id="a" width="300" height="250"></canvas>
+
+<script>
+    function draw_a() {
+        var a_canvas = document.getElementById("a");
+        var a_context = a_canvas.getContext("2d");
+        a_context.fillStyle = 'cyan';
+        a_context.fillRect(50, 25, 150, 100);
+    }
+    draw_a();
+</script>

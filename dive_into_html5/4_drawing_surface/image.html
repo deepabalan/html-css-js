@@ -1,0 +1,13 @@
+
+
+<img id="image" src="3.png" alt="running falling" width="177" height="113">
+<canvas id="e" width="177" height="113"></canvas>
+
+<script>
+    window.onload = function() {
+        var canvas = document.getElementById("e");
+        var context = canvas.getContext("2d");
+        var image = document.getElementById("image");
+        context.drawImage(image, 0, 0);
+    };
+</script>

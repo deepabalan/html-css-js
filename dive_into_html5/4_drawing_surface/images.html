@@ -1,0 +1,14 @@
+
+
+
+<canvas id="e" width="177" height="113"></canvas>
+
+<script>
+    var canvas = document.getElementById("e");
+    var context = canvas.getContext("2d");
+    var image = new Image();
+    image.src = "2.png";
+    image.onload = function() {
+        context.drawImage(image, 0, 0);
+    };
+</script>
