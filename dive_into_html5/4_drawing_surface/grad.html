@@ -1,0 +1,13 @@
+
+
+<canvas id="a" width="300" height="225"></canvas>
+
+<script>
+    var grad = document.getElementById("a");
+    var context = grad.getContext("2d");
+    var my_grad = context.createLinearGradient(0, 0, 300, 0);
+    my_grad.addColorStop(0, "black");
+    my_grad.addColorStop(1, "blue");
+    context.fillStyle = my_grad;
+    context.fillRect(0, 0, 300, 225);
+</script>

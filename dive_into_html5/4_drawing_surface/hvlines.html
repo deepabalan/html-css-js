@@ -1,0 +1,56 @@
+
+
+<canvas id="a" width="500" height="375"></canvas>
+
+<script>
+    var lines = document.getElementById("a");
+    var context = lines.getContext("2d");
+    
+    for (var x = 0.5; x <= 500; x += 10) {
+        context.moveTo(x, 0);
+        context.lineTo(x, 375);
+    }
+    for (var y = 0.5; y <= 375; y += 10) {
+        context.moveTo(0, y);
+        context.lineTo(500, y);
+    }
+    context.strokeStyle = "#eee";
+    context.stroke();
+    
+    context.beginPath();
+    // horizontal line
+    context.moveTo(0, 40);
+    context.lineTo(240, 40);
+    context.moveTo(270, 40);
+    context.lineTo(490, 40);
+    context.moveTo(490, 40);
+    context.lineTo(485, 35);
+    context.moveTo(490, 40);
+    context.lineTo(485, 45);
+
+    // vertical line
+    context.moveTo(60, 0);
+    context.lineTo(60, 155);
+    context.moveTo(60, 180);
+    context.lineTo(60, 360);
+    context.moveTo(60, 360);
+    context.lineTo(55, 355);
+    context.moveTo(65, 355);
+    context.lineTo(60, 360);
+        
+    context.strokeStyle = "#000";
+    context.stroke();
+    context.font = "bold 12px sans-serif";
+    context.fillText("x", 250, 43);
+    context.fillText("y", 58, 167);
+
+    context.textBaseline = "top";
+    context.fillText("(0, 0)", 8, 5);
+
+    context.textAlign = "right";
+    context.textBaseline = "bottom";
+    context.fillText("(500, 375)", 485, 365);
+
+    context.fillRect(0, 0, 3, 3);
+    context.fillRect(492, 372, 3, 3);
+</script>
